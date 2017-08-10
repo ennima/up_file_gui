@@ -1,0 +1,1 @@
+"C:\Users\enrique.nieto\Desktop\nwjs-sdk-v0.24.1-win-x64\nw" .
