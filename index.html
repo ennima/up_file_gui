@@ -21,15 +21,7 @@
 		<script src="./js/jquery-3.1.1.js"></script>
 		<script src="./js/jquery.validate.js"></script>
 		<script>
-		$.validator.setDefaults({
-			submitHandler: function() {
-				alert("submitted!");
-			}
-		});
-		$("#data-form").validate();
-
-
-
+		
 		// Load native UI library
 		var gui = require('nw.gui');
 
@@ -73,12 +65,27 @@
 		    console.log(files);
 		});
 
+
+
+		$.validator.setDefaults({
+			submitHandler: function() {
+				console.log("FILES LEN: "+files.length.toString());
+				for(var i = 0; i <= files.length-1; i++){
+					console.log(files[i]);
+				}
+				alert("submitted!");
+			}
+		});
+		$("#data-form").validate();
 		// fs.stat(path_a+"\\files\\f3.txt", function(err, stats){
 		// 	let seconds = (new Date().getTime() - stats.mtime) / 1000;
   //   		console.log(`File modified ${seconds} ago`);
   //   		// console.log(`Modified date: ${stats.mtime}`);
 		// });
 		
+
+		var ip = require("ip");
+		console.log( ip.address() );
 		</script>  
 	</body>
 </html>

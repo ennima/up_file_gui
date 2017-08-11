@@ -1,4 +1,8 @@
 {
   "name": "nw-demo",
-  "main": "index.html"
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+  	"ip": "^1.1.5"
+  }
 }
