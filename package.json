@@ -1,8 +1,17 @@
 {
   "name": "nw-demo",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ennima/up_file_gui.git"
+  },
+  "author": "Enrique Nieto Martínez",
   "license": "MIT",
   "dependencies": {
-  	"ip": "^1.1.5"
-  }
+    "ip": "^1.1.5"
+  },
+  "permissions": [
+      "node",
+      "fileSystem"
+  ] 
 }

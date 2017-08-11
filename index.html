@@ -84,8 +84,10 @@
 		// });
 		
 
-		var ip = require("ip");
+		var ip = require("./node_modules/ip");
 		console.log( ip.address() );
+		var cont1 = $("#contents").html();
+		$("#contents").html(cont1 + "<h2>"+ ip.address() +"</h2>");
 		</script>  
 	</body>
 </html>
